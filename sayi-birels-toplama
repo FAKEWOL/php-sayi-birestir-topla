@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        $random1  = array(11,34,145,196,1275,4546,234,6556,87,7567,467);
+        $random2  = array(12,37,125,166,1475,4246,214,6156,86,7527,487);
+        $random3  = array(14,36,115,146,1875,4346,264,6356,83,7517,437);
+        $sayilar = array_merge($random1,$random2,$random3);
+        sort($sayilar);
+        echo implode("-",$sayilar);
+
+    ?>
+</body>
+</html>
